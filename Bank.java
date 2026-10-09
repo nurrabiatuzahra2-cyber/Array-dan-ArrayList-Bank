@@ -1,4 +1,3 @@
-
 public class Bank {
     private Customer[] customers;
     private int numberOfCustomers;
@@ -16,6 +15,9 @@ public class Bank {
                 new Customer(firstName, lastName);
 
             numberOfCustomers++;
+            System.out.println("Customer berhasil ditambahkan!");
+        } else {
+            System.out.println("Kapasitas customer sudah penuh!");
         }
     }
 
